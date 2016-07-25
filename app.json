@@ -1,8 +1,0 @@
-{
-	"name" : "siple todo app on Heroku",
-	"description" : "Simple MEAN todo app",
-	"repo": "",
-	"logo":"",
-	"leywords":["node","express","todo"],
-	"image":""
-}
