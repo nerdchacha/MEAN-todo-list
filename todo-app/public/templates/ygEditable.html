@@ -1,0 +1,18 @@
+<div class="form-group">
+    <div class="row">
+        <div class="col-sm-8">
+            <span class="active" ng-click="edit()" ng-class="{done : task.done % 2 !== 0}">{{task.task}}</span>
+            <input type="text" placeholder="Enter task" class="form-control" ng-model="task.newValue"/>
+        </div>
+        <div class="col-sm-4" id="btns">
+            <div id="before-edit" class="active">
+                <button class="btn btn-primary" ng-click="done(task)">Done</button>
+                <button class="btn btn-danger" ng-click="delete(task)">Delete</button>
+            </div>
+            <div id="after-edit">
+                <button class="btn btn-success" ng-click="update(task,task.newValue)">Save</button>
+                <button class="btn btn-danger" ng-click="cancel()">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>

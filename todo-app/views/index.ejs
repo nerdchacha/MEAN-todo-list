@@ -1,0 +1,21 @@
+<div class="container" ng-controller="todoCtrl">
+  <h2 class="page-header">Todo App</h2>
+  <form>
+    <div class="form-group">
+      <div class="row">
+        <div class="col-sm-3">
+          <label>Add new task : </label>
+        </div>
+        <div class="col-sm-5">
+          <input type="text" placeholder="Enter new task" class="form-control" ng-model="newTask.task"/>
+        </div>
+        <div class="col-sm-4">
+          <button class="btn btn-success" ng-click="add()">Add</button>
+        </div>
+      </div>
+    </div>
+    <div class="alert alert-warning">click on task to edit</div>
+    <hr/>
+    <yg-editable ng-repeat="task in tasks" task="task" rerender="rerender()"></yg-editable>
+  </form>
+</div>

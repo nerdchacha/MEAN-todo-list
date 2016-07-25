@@ -1,0 +1,36 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+yg-editable input.form-control{
+  display:none;
+}
+
+yg-editable input.form-control.active{
+  display:inline;
+}
+
+yg-editable #btns div{
+  display:none;
+}
+
+yg-editable #btns div.active{
+  display:block;
+}
+
+yg-editable span{
+  display:none;
+  cursor: pointer;
+}
+
+yg-editable span.active{
+  display:inline;
+}
+
+span.done{
+  text-decoration: line-through;
+}
