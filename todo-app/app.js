@@ -8,7 +8,7 @@ var partials = require('express-partials');
 var mongo = require('mongodb');
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/todo-app');
+mongoose.connect('mongodb://todouser:admin@ds011765.mlab.com:11765/todo-app');
 var db = mongoose.connection;
 
 var routes = require('./routes/index-router');
